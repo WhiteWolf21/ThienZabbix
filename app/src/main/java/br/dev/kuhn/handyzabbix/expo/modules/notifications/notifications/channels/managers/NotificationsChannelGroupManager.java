@@ -1,0 +1,15 @@
+package br.dev.kuhn.handyzabbix.expo.modules.notifications.notifications.channels.managers;
+
+import android.app.NotificationChannelGroup;
+import expo.modules.core.arguments.ReadableArguments;
+import java.util.List;
+
+public interface NotificationsChannelGroupManager {
+    NotificationChannelGroup createNotificationChannelGroup(String str, CharSequence charSequence, ReadableArguments readableArguments);
+
+    void deleteNotificationChannelGroup(String str);
+
+    NotificationChannelGroup getNotificationChannelGroup(String str);
+
+    List<NotificationChannelGroup> getNotificationChannelGroups();
+}
